@@ -83,7 +83,7 @@ function getEvents(req, res) {
 app.get('/events', (req, res) => {
     getEvents(req, res);
 });
-
+// new secret comment here!!
 // This has been modified to insert into firestore, and then call 
 // the shared getEvents method.
 app.post('/event', (req, res) => {
