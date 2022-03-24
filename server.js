@@ -93,7 +93,8 @@ app.post('/event', (req, res) => {
     const ev = {
         title: req.body.title,
         description: req.body.description,
-        location: req.body.location,
+        location: req.body.location,        
+        place: req.body.place,
         likes: 0
     }
     firestore.collection("Events").add(ev).then(ret => {
